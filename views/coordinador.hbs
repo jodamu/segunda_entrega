@@ -1,0 +1,48 @@
+{{>header}}
+    <div class="jumbotron">
+  <h1 class="display-4">Admin Coordinador</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+
+<form method="post" action="/admin_coordinador">
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="idcurso">ID Curso</label>
+      <input type="text" class="form-control" required="true" id="idcurso" name="idcurso" placeholder="idCurso">
+    </div>
+    <div class="form-group col-md-10">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" required="true" id="nombre" name="nombre" placeholder="nombre">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="descripcion">Descripcion</label>
+      <input type="text" class="form-control" required="true" id="descripcion" name="descripcion" placeholder="Descripcion">
+    </div>
+
+     <div class="form-group col-md-4">
+      <label for="valor">valor</label>
+      <input type="number" class="form-control" required="true" id="valor" name="valor" placeholder="valor">
+    </div>
+     <div class="form-group col-md-4">
+      <label for="intencidad">Intencidad horaria</label>
+      <input type="number" class="form-control" id="intencidad" name="intencidad" placeholder="Intencidad horaria">
+    </div>
+<div class="form-group col-md-4">
+      <label for="modalidad">Modalidad</label>
+     <select name="modalidad" id="modalidad" class="form-control">
+       <option value="virtual">Virtual</option>
+       <option value="Presencial">Presencial</option>
+     </select>
+    </div>
+<input type="hidden" name="estado" value="disponible">
+
+
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+
+</div>
+
+ {{>footer}}

@@ -1,0 +1,18 @@
+{
+  "name": "entrega_numero_2",
+  "version": "1.0.1",
+  "description": "entrega numero dos de node js",
+  "main": "src/app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "hbs": "^4.0.3",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daniel jodamu90@gmail.com",
+  "license": "ISC"
+}

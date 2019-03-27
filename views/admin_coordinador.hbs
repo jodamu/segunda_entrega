@@ -1,0 +1,14 @@
+{{>header}}
+    <div class="jumbotron">
+  <h1 class="display-4">Curso {{nombre}}</h1>
+  <p class="lead"> {{{crearCurso idcurso nombre descripcion valor intencidad modalidad estado}}}</p>
+  <hr class="my-4">
+  <p id="cc"></p>
+   <div class="container">
+   <div class="h1 text-center">Listado de cursos</div>
+    {{{listado}}}
+  </div>
+
+</div>
+
+ {{>footer}}

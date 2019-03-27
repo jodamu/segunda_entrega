@@ -1,0 +1,42 @@
+{{>header}}
+    <div class="jumbotron">
+  <h1 class="display-4">Admin Coordinador</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+
+<form method="post" action="/admin_inscritos">
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="documento">Documento</label>
+      <input type="text" class="form-control" required="true" id="documento" name="documento" placeholder="documento">
+    </div>
+    <div class="form-group col-md-10">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" required="true" id="nombre" name="nombre" placeholder="nombre">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="correo">correo</label>
+      <input type="email" class="form-control" required="true" id="correo" name="correo" placeholder="correo">
+    </div>
+
+     <div class="form-group col-md-4">
+      <label for="telefono">telefono</label>
+      <input type="text" class="form-control" required="true" id="telefono" name="telefono" placeholder="telefono">
+    </div>
+     
+<div class="form-group col-md-4">
+      <label for="modalidad">Modalidad</label>
+     {{{listadoCursosSelect}}}
+    </div>
+
+
+
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+
+</div>
+
+ {{>footer}}

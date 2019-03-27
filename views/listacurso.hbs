@@ -1,0 +1,29 @@
+{{>header}}
+  
+
+  <div class="container">
+   <div class="h1 text-center">Listado de cursos</div>
+   <form action="/listacurso">
+   	 <div class="form-row bg-info">
+   	 	<div class="form-group col-md-4">
+   	 	<label for="">Cambiar estado de un curso</label>
+   	 	{{{listadoCursosSelect}}}
+			{{{cambestado curso}}}
+ </div>
+ <div class="form-group col-md-4">
+ 	<label for=""></label>
+<button class="btn btn-lg btn-danger mt-3" type="submit">Cambiar estado</button>
+ </div>
+   	 </div>
+   
+   	
+   	
+   </form>
+	
+   <hr class="hr">
+
+    {{{listadoCursos}}}
+  </div>
+
+
+ {{>footer}}
